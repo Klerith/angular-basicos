@@ -11,8 +11,8 @@
 
     <div class="col">
         <app-agregar 
-            [personajes]="personajes"
             [nuevo]="nuevo"
+            (onNuevoPersonaje)="agregarNuevoPersonaje( $event )"
         ></app-agregar>
     </div>
 
